@@ -1,6 +1,6 @@
 // Variaveis lei zero
 let listaNumeros = [];
-let tamanhoDaLista = 10;
+let tamanhoDaLista = 50;
 let numbSecreto = gerarNumeroAleatorio();
 let tentativa = 1;
 
@@ -8,7 +8,7 @@ let tentativa = 1;
 function exibirTexto(tagHtml,textoInteracao){
     let campoTexto = document.querySelector(tagHtml);
     campoTexto.innerHTML = textoInteracao;
-    responsiveVoice.speak(textoInteracao,'Brazilian Portuguese Female',{rate:1.2});
+   // responsiveVoice.speak(textoInteracao,'Brazilian Portuguese Female',{rate:1.2});
 }
 
 function mensagemInicial(){
