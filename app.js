@@ -8,7 +8,7 @@ let tentativa = 1;
 function exibirTexto(tagHtml,textoInteracao){
     let campoTexto = document.querySelector(tagHtml);
     campoTexto.innerHTML = textoInteracao;
-   // responsiveVoice.speak(textoInteracao,'Brazilian Portuguese Female',{rate:1.2});
+    responsiveVoice.speak(textoInteracao,'Brazilian Portuguese Female',{rate:1.2});
 }
 
 function mensagemInicial(){
@@ -27,7 +27,6 @@ function gerarNumeroAleatorio() {
         return gerarNumeroAleatorio();
     } else {
         listaNumeros.push(numeroSorteado);
-        console.log(listaNumeros);
         return numeroSorteado;
     }
 }
@@ -39,7 +38,6 @@ function limparCampo(){
 
 function verificarChute() {
     let chute = document.querySelector('input').value;
-    console.log(numbSecreto);
     if (chute == numbSecreto){
         exibirTexto('h1', 'Acertou!!!!');
         let palavraTentativa = tentativa > 1 ? 'tentativas' : 'tentativa';
